@@ -1,0 +1,227 @@
+@font-face {
+    font-family: barlow;
+    src: url('/font/Barlow-Regular.otf');
+}
+@font-face {
+    font-family: barlow-light;
+    src: url("/font/Barlow-Light.otf");
+}
+@media (min-width: 1981px) {
+    .container{
+        margin:auto !important;
+
+    }
+}
+@media (max-width: 768px) {
+    body{width: 767px}
+    .art{
+        display: none;
+    }
+}
+body{
+    background: #EFF6FF;
+    color: #2A4A5C;
+    font-family: barlow-light, serif;
+    font-size: 18px;
+    margin: 0;
+
+}
+.title{
+    color: #7B8A92;
+}
+.container{
+    /*border: 1px solid black;*/
+    min-height: 1050px;
+    max-width: 1980px;
+    display: grid;
+    grid-template-columns: minmax(55%, 1fr) minmax(45%, 1fr);
+    background: white;
+    margin: 5% 3%;
+}
+.container div{
+   /* border: 1px solid black;*/
+}
+
+.container1{
+
+    margin: 15% 10% 15% 10%;
+    display: grid;
+    grid-row-gap: 40px;
+}
+.art{
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+}
+.logo{
+    width: 150px;
+    margin: 40px 40px;
+}
+.signin{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+button{
+    margin: 0;
+}
+.btn{
+    font-family: barlow-light;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    border: 0;
+    justify-content: start;
+    align-content: center;
+    text-align: start;
+}
+.facebook:hover,
+.linkedin:hover{
+    opacity: 0.9;
+}
+.facebook:active,
+.linkedin:active{
+    opacity: 0.8;
+}
+.btn img{
+    width: 20px;
+
+}
+.facebook{
+    background: #255A9B;
+}
+.linkedin{
+    background: #0076B6;
+}
+.icon{
+    margin: auto;
+}
+.lineText hr{
+    width: 60%;
+    margin: auto;
+    background-color: #EEEEEE;
+}
+.lineText a{
+    color: #7B8A92;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+    position: relative;
+    bottom: 10px;
+    width: 30px;
+    background: white;
+}
+.enter{
+    font: bold 16px barlow;
+    color: #2A4A5C;
+    border: 1px solid #EEEEEE;
+    padding: 15px 0px 0px 10px;
+    width: calc(100% - 10px);
+
+}
+input{
+    outline: none;
+}
+.enter:focus{
+    border-left: 2px solid #3698FB;
+}
+.signin span{
+    position: relative;
+    top: 20px;
+    left: 10px;
+    font: 14px barlow;
+    color: #7B8A92;
+
+}
+.a1{
+    position: relative;
+    bottom: 30px;
+}
+
+.radio label{
+
+    font-size: 16px;
+}
+input[type="radio"]{
+    position: relative;
+    top: 3px;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    appearance: none;
+    border: 2px solid #EEEEEE;
+}
+input[type="radio"]:checked{
+    width: 17px;
+    height: 17px;
+    appearance: none;
+    border: 4px solid #3698FB;
+    border-radius: 10px;
+}
+.text{
+    font: 14px barlow;
+    color: #7B8A92;
+    box-shadow: 0px 0px 20px #EEEEEE;
+    width: 250px;
+    border-radius: 5px;
+    margin: 20px 0px 0px 10px ;
+    padding: 15px 10px;
+}
+.radio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 25px;
+}
+/*
+#t1, #t2, #t3, #t4 {
+    display: none;
+}
+#r1:focus-within ~#t1{
+    display: block;
+}
+#r2:focus-within ~#t2{
+    display: block;
+}
+#r3:focus-within ~#t3{
+    display: block;
+}
+#r4:focus-within ~#t4{
+    display: block;
+}
+*/
+
+.item1{
+    font: 14px barlow;
+    color: #7B8A92;
+    position: relative;
+    bottom: 2px;
+}
+.checkbox{
+    width: 14px;
+    height: 14px;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.btn2{
+    background: #3698FB;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: barlow;
+    vertical-align: center;
+}
+.btn2:hover{
+    opacity: 0.9;
+}
+.btn2:active{
+    opacity: 0.8;
+}
